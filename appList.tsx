@@ -35,5 +35,3 @@ export const bottomApp: AppProps[] = [
     { name: "", icon: Call },
     { name: "", icon: Music }
 ]
-
-console.log("ok")
