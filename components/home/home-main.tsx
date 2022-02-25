@@ -9,10 +9,11 @@ import { CurrentTime } from "./home-time";
 
 import "./styles.scss";
 
-export const Home: React.FC<AppProps> = (props: AppProps) => {
+const Home: React.FC<AppProps> = (p: AppProps) => {
     const getApp = () => {
         return applications.map((app, index) => {
-            return <div onClick={() => openApplication(`${app.path}`)} className="mango-icon"><img id={app.path} src={app.icon} alt={app.name} height="64px"/><div className="mango-title"><a>{app.name}</a></div></div>
+            const location = app.path ? `../app/${app.path}` : "";
+            return <div className="mango-icon"><a href={location}><img id={app.path} src={app.icon} alt={app.name} height="64px"/></a><div className="mango-title"><a>{app.name}</a></div></div>
         })
     }
 
@@ -38,4 +39,4 @@ export const Home: React.FC<AppProps> = (props: AppProps) => {
     )
 }
 
-EnableHome()
+export default Home;

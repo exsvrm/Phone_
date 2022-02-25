@@ -21,7 +21,7 @@ const settingsList: Settings[] = [
     { icon: "bi bi-translate background-blue", name: "Langage", path: "language", hr: false }
 ]
 
-export const Settings: React.FC<Settings> = (props: Settings) => {
+const Settings: React.FC<Settings> = (props: Settings) => {
     const getSettingsList = () => {
         return settingsList.map((app) => {
             return <span onClick={() => openApplication(`${app.path}`)} >
@@ -56,3 +56,5 @@ export const Settings: React.FC<Settings> = (props: Settings) => {
 
     )
 }
+
+export default Settings;
