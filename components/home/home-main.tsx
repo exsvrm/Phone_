@@ -6,6 +6,7 @@ import { DisableHome, EnableHome, openApplication } from './PhoneSwitchPath';
 import { Weather } from "../app/weather/weather-main";
 import Settings from "../app/settings/settings-main";
 import { CurrentTime } from "./home-time";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import "./styles.scss";
 
@@ -13,7 +14,9 @@ const Home: React.FC<AppProps> = (p: AppProps) => {
     const getApp = () => {
         return applications.map((app, index) => {
             const location = app.path ? `../app/${app.path}` : "";
-            return <div className="mango-icon"><a href={location}><img id={app.path} src={app.icon} alt={app.name} height="64px"/></a><div className="mango-title"><a>{app.name}</a></div></div>
+            return <div className="mango-icon">
+                <img id={app.path} src={app.icon} alt={app.name} height="64px"/>    
+            <div className="mango-title"><a>{app.name}</a></div></div>
         })
     }
 
