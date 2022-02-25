@@ -32,7 +32,6 @@ export const Wallpaper: React.FC = () => {
 
             <div className="bgList">
                 {getWallpaperList()}
-                <span className="button">Définir</span>
             </div>
         </div>
     )
