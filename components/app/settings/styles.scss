@@ -113,6 +113,20 @@
 }
 
 .wallpaper {
+    .button {
+        background: #1d1c22;
+        border-radius: 99px;
+        padding: 6px 18px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+}
+
+.wallpaper {
     img {
         object-fit: cover;
         width: 150px;
