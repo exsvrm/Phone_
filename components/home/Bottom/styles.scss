@@ -1,0 +1,51 @@
+.bottom-mango {
+    background: rgba(10,10,10,.9);
+    position: absolute;
+    left: 50%;
+    right: 100px;
+    transform: translate(-50%, 0);
+    width: 350px;
+    height: 100px;
+    bottom: 25px;
+    transition-duration: 500ms;
+    margin-bottom: 1vh;
+    border-radius: 25px;
+    opacity: 0.95;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 1px;
+}
+
+.bottom-app-icon img {
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    cursor: pointer;
+    top: 50%;
+    margin-left: 12px;
+    margin-right: 12px;
+    transform: translate(0, 25%);
+}
+
+.bottom-app-icon img:hover {
+    filter: brightness(75%);
+}
+
+.bottom-bar {
+    display: none;
+    position: absolute;
+    height: 5px;
+    text-align: center;
+    border-radius: 2.5px;
+    left: 50%;
+    right: 100px;
+    transform:translate(-50%, 0);
+    width:175px;
+    z-index: 99;
+    bottom: 25px;
+    transition-duration: 500ms;
+    background: white;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+
+.card {
+    margin-top: 1vh;
+    background: #1c1c1e;
+    padding: 20px 20px;
+    width: 75%;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: table-cell;
+    color: white;
+}
+
+.card_img {
+    vertical-align: middle;
+}
+
+.card_t {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 25px;
+}
+
+.card_text {
+    font-size: 1.1vh;
+    cursor: pointer;
+}
+
+.informations_title {
+    color: rgb(142, 141, 147);
+    margin-left: 35px;
+    position: absolute;
+    margin-top: 5.5vh;
+}
+
+.settings {
+    position: relative;
+
+    .title {
+        color: white;
+        font-size: 1.2vh;
+        margin-left: 35px;
+        display: inline-block;
+        padding-top: 30px;
+    }
+
+    .card_mango {
+        color: #67666c;
+    }
+
+    display: none;
+}
+
+.cloud, .ringtone, .wallpaper, .language {
+    position: relative;
+
+    .back_title {
+        color: #3c85f4;
+        font-size: 1.2vh;
+        display: inline-block;
+        padding-top: 30px;
+        margin-left: 15px;
+    }
+
+    .back_title a, i {
+        cursor: pointer;
+    }
+
+    .title {
+        padding-top: 30px;
+        font-size: 1.2vh;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+    }
+
+    display: none;
+}
+
+.wallpaper {
+    img {
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        cursor: cell;
+    }
+
+    .bgList {
+        margin-top: 5vh;
+        display: block;
+        text-align: center;
+    }
+
+    .bgList > img {
+        margin: 10px 10px 10px 10px;
+    }
+}

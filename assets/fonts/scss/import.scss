@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "Apple Regular";
+	src: url("../Regular.woff2") format("woff2"),
+		url("../Regular.woff") format("woff");
+	font-display: block;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Apple Medium";
+	src: url("../Medium.woff2") format("woff2"),
+		url("../Medium.woff") format("woff");
+	font-display: block;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Apple Bold";
+	src: url("../Bold.woff2") format("woff2"),
+		url("../Bold.woff") format("woff");
+	font-display: block;
+	font-style: normal;
+	font-weight: 500;
+}

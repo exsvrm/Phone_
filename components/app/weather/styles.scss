@@ -1,0 +1,23 @@
+.weather {
+    margin-top: 65%;
+    position: relative;
+    margin-top: 320px;
+    text-align: center;
+
+    .title {
+        color: white;
+        font-size: 27.5px;
+    }
+
+    .title_temp {
+        color: white;
+        font-size: 60px;
+    }
+
+    .desc {
+        color: #cacaca;
+        font-size: 25px;
+    }
+    
+    display: none;
+}
