@@ -15,7 +15,7 @@ const ringtoneList: Ringtone[] = [
 export const Ringtone: React.FC = () => {
     const getRingtoneList = () => {
         return ringtoneList.map((app) => {
-            return <span><b className={app.icon}></b><a style={{marginLeft: "15px"}} className="card_text">{app.name}</a>{app.hr === true ? <hr/> : <></>}</span>
+            return <span><b className={app.icon}></b><a style={{marginLeft: "15px"}} className="card_text">{app.name} </a>{app.hr === true ? <hr/> : <></>}</span>
         })
     }
 
