@@ -20,9 +20,12 @@ const settingsList: Settings[] = [
 
 const Settings: React.FC<Settings> = (props: Settings) => {
     const getSettingsList = () => {
+
         return settingsList.map((app) => {
-            return <span>
-                <i className={app.icon}></i><a style={{marginLeft: "15px"}} className="card_text">{app.name}</a>{app.hr === true ? <hr/> : <></>}</span>
+            const newPath = `./settings-${app.path}`
+
+            return <Link to={newPath}><span style={{color: "white"}}>
+                <i className={app.icon}></i><a style={{marginLeft: "15px"}} className="card_text">{app.name}</a>{app.hr === true ? <hr/> : <></>}</span></Link>
         })
     }
 

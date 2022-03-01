@@ -12,7 +12,6 @@
     .card_mango {
         color: #67666c;
     }
-
     
     .card {
         margin-top: 1vh;
@@ -24,7 +23,7 @@
         left: 50%;
         transform: translate(-50%, 0);
         display: table-cell;
-        color: white;
+        color: white !important;
     }
     
     .card_img {
