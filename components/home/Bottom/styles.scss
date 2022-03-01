@@ -26,10 +26,10 @@
     margin-left: 12px;
     margin-right: 12px;
     transform: translate(0, 25%);
-}
 
-.bottom-app-icon img:hover {
-    filter: brightness(75%);
+    &:hover {
+        filter: brightness(75%);
+    }
 }
 
 .bottom-bar {

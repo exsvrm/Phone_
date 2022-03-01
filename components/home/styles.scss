@@ -114,10 +114,10 @@
     cursor: pointer;
     grid-template-columns: repeat(auto-fill, minmax(200px, 5fr));
     text-align: center;
-}
 
-.mango-icon img:hover {
-    filter: brightness(75%);
+    &:hover {
+        filter: brightness(75%);
+    }
 }
 
 .header {
