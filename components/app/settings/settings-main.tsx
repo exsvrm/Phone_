@@ -1,9 +1,4 @@
 import React from "react";
-import { openApplication } from "./Switch";
-import { Cloud } from "./settings-cloud";
-import { Ringtone } from "./settings-ringtone";
-import { Wallpaper } from "./settings-wallpaper";
-import { Language } from "./settings-language";
  
 import "./styles.scss";
 
@@ -24,13 +19,12 @@ const settingsList: Settings[] = [
 const Settings: React.FC<Settings> = (props: Settings) => {
     const getSettingsList = () => {
         return settingsList.map((app) => {
-            return <span onClick={() => openApplication(`${app.path}`)} >
+            return <span>
                 <i className={app.icon}></i><a style={{marginLeft: "15px"}} className="card_text">{app.name}</a>{app.hr === true ? <hr/> : <></>}</span>
         })
     }
 
     return (
-        <>
         <div className="settings">
             <a className="title">Réglages</a>
 
@@ -48,12 +42,6 @@ const Settings: React.FC<Settings> = (props: Settings) => {
             </div>
 
         </div>
-        <Cloud/>
-        <Ringtone/>
-        <Wallpaper/>
-        <Language/>
-        </>
-
     )
 }
 

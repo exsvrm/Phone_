@@ -1,5 +1,4 @@
 import React from "react";
-import { EnableSetting } from "./Switch";
 
 interface Ringtone {
     icon?: string,
@@ -21,7 +20,7 @@ export const Ringtone: React.FC = () => {
 
     return (
         <div className="ringtone">
-            <a className="back_title"><i className="bi bi-chevron-left"></i> <a onClick={() => EnableSetting()}>Réglages</a></a>
+            <a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a>
             <a className="title">Sonnerie</a>
 
             <div className="card">

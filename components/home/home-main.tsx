@@ -2,9 +2,6 @@ import React from "react";
 import { AppProps, applications } from "../../appList";
 import { BottomApp } from "./Bottom/App";
 import { BottomBar } from "./Bottom/Bar"; // <-- not on home
-import { DisableHome, EnableHome, openApplication } from './PhoneSwitchPath';
-import { Weather } from "../app/weather/weather-main";
-import Settings from "../app/settings/settings-main";
 import { CurrentTime } from "./home-time";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -35,8 +32,6 @@ const Home: React.FC<AppProps> = (p: AppProps) => {
 
                     <BottomApp/>
                     <BottomBar/>
-                <Weather/>
-                <Settings/>
             </div>
         </div>
     )

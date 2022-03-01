@@ -1,5 +1,4 @@
 import React from "react";
-import { EnableSetting } from "./Switch";
 
 import Wallpaper_01 from "../../../assets/img/acot08spi26tlqsu0ypgz02rhq1p64je.jpg";
 import Wallpaper_02 from "../../../assets/img/be32q9401rqf2p61sk2vevm8qjq1mm40.jpg";
@@ -27,7 +26,7 @@ export const Wallpaper: React.FC = () => {
 
     return (
         <div className="wallpaper">
-            <a className="back_title"><i className="bi bi-chevron-left"></i> <a onClick={() => EnableSetting()}>Réglages</a></a>
+            <a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a>
             <a className="title">Fond d'écran</a>
 
             <div className="bgList">

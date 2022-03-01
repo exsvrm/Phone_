@@ -1,5 +1,4 @@
 import React from "react";
-import { EnableSetting } from "./Switch";
 
 interface Language {
     icon?: string,
@@ -20,7 +19,7 @@ export const Language: React.FC = () => {
 
     return (
         <div className="language">
-            <a className="back_title"><i className="bi bi-chevron-left"></i> <a onClick={() => EnableSetting()}>Réglages</a></a>
+            <a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a>
             <a className="title">Langage</a>
 
             <div className="card">
