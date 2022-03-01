@@ -1,5 +1,5 @@
 import React from "react";
-import { AppProps, applications } from "../../appList";
+import { AppProps, applications } from "../../../appList";
 import { BottomApp } from "./Bottom/App";
 import { BottomBar } from "./Bottom/Bar"; // <-- not on home
 import { CurrentTime } from "./home-time";
