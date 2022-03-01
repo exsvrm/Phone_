@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import BottomBar from '../home/Bottom/Bar';
 
 interface Language {
     icon?: string,
@@ -10,7 +13,7 @@ const languageList: Language[] = [
     { icon: "bi bi-flag-fill background-invisible", name: "Français", hr: false }
 ]
 
-export const Language: React.FC = () => {
+const Language: React.FC = () => {
     const getLanguageList = () => {
         return languageList.map((app) => {
             return <span><b className={app.icon}></b><a style={{marginLeft: "15px"}} className="card_text">{app.name}</a>{app.hr === true ? <hr/> : <></>}</span>
@@ -18,8 +21,11 @@ export const Language: React.FC = () => {
     }
 
     return (
+        <>
+        <div className="bg-black" />
         <div className="language">
-            <a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a>
+
+        <Link to="/app/settings"><a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a></Link>
             <a className="title">Langage</a>
 
             <div className="card">
@@ -30,5 +36,10 @@ export const Language: React.FC = () => {
                 Seul le language Français est disponible pour le moment.
             </div>
         </div>
+
+        <BottomBar />
+        </>
     )
 }
+
+export default Language;

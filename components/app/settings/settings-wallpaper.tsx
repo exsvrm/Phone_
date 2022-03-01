@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
+import BottomBar from '../home/Bottom/Bar';
 import Wallpaper_01 from "../../../assets/img/acot08spi26tlqsu0ypgz02rhq1p64je.jpg";
 import Wallpaper_02 from "../../../assets/img/be32q9401rqf2p61sk2vevm8qjq1mm40.jpg";
 import Wallpaper_03 from "../../../assets/img/ghvr9sckfxze7w7j5e546wsc7f1ernus.jpg";
@@ -17,7 +19,7 @@ const wallpaperList: Wallpaper[] = [
 
 ]
 
-export const Wallpaper: React.FC = () => {
+const Wallpaper: React.FC = () => {
     const getWallpaperList = () => {
         return wallpaperList.map((app) => {
             return <img src={app.url} />
@@ -25,13 +27,21 @@ export const Wallpaper: React.FC = () => {
     }
 
     return (
+        <>
+        <div className="bg-black" />
         <div className="wallpaper">
-            <a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a>
+
+        <Link to="/app/settings"><a className="back_title"><i className="bi bi-chevron-left"></i> <a>Réglages</a></a></Link>
             <a className="title">Fond d'écran</a>
 
             <div className="bgList">
                 {getWallpaperList()}
             </div>
         </div>
+
+        <BottomBar />
+        </>
     )
 }
+
+export default Wallpaper;

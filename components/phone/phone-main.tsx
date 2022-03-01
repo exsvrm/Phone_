@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../app/home/home-main";
+
 import Settings from "../app/settings/settings-main";
+import Cloud from "../app/settings/settings-cloud";
+import Language from "../app/settings/settings-language";
+import Ringtone from "../app/settings/settings-ringtone";
+import Wallpaper from "../app/settings/settings-wallpaper";
+
 import Weather from "../app/weather/weather-main";
 
 import "./styles.scss";
@@ -24,6 +30,10 @@ const Phone = () => {
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/app/settings" element={<Settings />} />
+                    <Route path="/app/settings/settings-cloud" element={<Cloud />} />
+                    <Route path="/app/settings/settings-language" element={<Language />} />
+                    <Route path="/app/settings/settings-ringtone" element={<Ringtone />} />
+                    <Route path="/app/settings/settings-wallpaper" element={<Wallpaper />} />
                     <Route path="/app/weather" element={<Weather />} />
                   </Routes>
                 </>
