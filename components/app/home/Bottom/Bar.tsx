@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
 export function BottomBar() {
     return (
-        <div className="bottom-bar"></div>
+        <Link to="/"><div className="bottom-bar" /></Link>
     )
 }

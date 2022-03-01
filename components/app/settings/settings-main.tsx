@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
- 
+
 import "./styles.scss";
+import { BottomBar } from '../home/Bottom/Bar';
 
 interface Settings {
     icon?: string,
@@ -26,7 +27,10 @@ const Settings: React.FC<Settings> = (props: Settings) => {
     }
 
     return (
+        <>
+        <div className="bg-black" />
         <div className="settings">
+
             <a className="title">Réglages</a>
 
             <div className="card">
@@ -43,6 +47,8 @@ const Settings: React.FC<Settings> = (props: Settings) => {
             </div>
 
         </div>
+        <BottomBar />
+        </>
     )
 }
 
