@@ -10,10 +10,10 @@ import "./styles.scss";
 const Home: React.FC<AppProps> = (p: AppProps) => {
     const getApp = () => {
         return applications.map((app, index) => {
-            const newpath = `../app/${app.path}`
+            const newPath = `../app/${app.path}`
 
             return <div className="mango-icon">
-                <Link to={newpath}><img id={app.path} src={app.icon} alt={app.name} height="64px"/></Link>
+                <Link to={newPath}><img id={app.path} src={app.icon} alt={app.name} height="64px"/></Link>
             <div className="mango-title"><a>{app.name}</a></div></div>
         })
     }
