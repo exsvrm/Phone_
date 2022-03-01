@@ -1,11 +1,11 @@
 import React from "react";
-import { AppProps, applications } from "../../../appList";
+import { applications } from "../../../appList";
 import BottomApp from "./Bottom/App";
 import { Link } from 'react-router-dom';
 
 import "./styles.scss";
 
-const Home: React.FC<AppProps> = (p: AppProps) => {
+const Home: React.FC = () => {
     const getApp = () => {
         return applications.map((app, index) => {
             const newPath = `../app/${app.path}`
