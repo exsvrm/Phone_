@@ -3,16 +3,17 @@ import { AppProps, applications } from "../../appList";
 import { BottomApp } from "./Bottom/App";
 import { BottomBar } from "./Bottom/Bar"; // <-- not on home
 import { CurrentTime } from "./home-time";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import "./styles.scss";
 
 const Home: React.FC<AppProps> = (p: AppProps) => {
     const getApp = () => {
         return applications.map((app, index) => {
-            const location = app.path ? `../app/${app.path}` : "";
+            const newpath = `../app/${app.path}`
+
             return <div className="mango-icon">
-                <img id={app.path} src={app.icon} alt={app.name} height="64px"/>    
+                <Link to={newpath}><img id={app.path} src={app.icon} alt={app.name} height="64px"/></Link>
             <div className="mango-title"><a>{app.name}</a></div></div>
         })
     }
