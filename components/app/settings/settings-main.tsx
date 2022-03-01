@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
-import { BottomBar } from '../home/Bottom/Bar';
+import BottomBar from '../home/Bottom/Bar';
 
 interface Settings {
     icon?: string,

@@ -1,11 +1,14 @@
 import React from "react";
+import BottomBar from '../home/Bottom/Bar';
 
 import "./styles.scss";
 
-
-export const Weather: React.FC = () => {
+const Weather: React.FC = () => {
     const Weather = 'Ensoleillé'
     return (
+        <>
+        <div className="bg-blue" />
+        
         <div className="weather">
             <span style={{whiteSpace: "pre-line"}}>
                 <a className="title">Los santos</a>
@@ -15,5 +18,9 @@ export const Weather: React.FC = () => {
                 <a className="desc">{Weather}</a>
             </span>
         </div>
+        <BottomBar />
+        </>
     )
 }
+
+export default Weather;

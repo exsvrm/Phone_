@@ -2,8 +2,8 @@ import React from "react";
 
 import "./styles.scss";
 import { bottomApp } from "../../../../appList";
-
-export const BottomApp: React.FC = () => {
+ 
+const BottomApp: React.FC = () => {
     const getApp = () => {
         return bottomApp.map((app) => {
             return <div className="bottom-app-icon"><img src={app.icon} alt="/" height="64px"/></div>
@@ -16,3 +16,5 @@ export const BottomApp: React.FC = () => {
         </div>
     )
 }
+
+export default BottomApp;

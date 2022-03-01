@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../app/home/home-main";
 import Settings from "../app/settings/settings-main";
-import { BottomBar } from "../app/home/Bottom/Bar";
+import Weather from "../app/weather/weather-main";
 
 import "./styles.scss";
 
@@ -24,6 +24,7 @@ const Phone = () => {
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/app/settings" element={<Settings />} />
+                    <Route path="/app/weather" element={<Weather />} />
                   </Routes>
                 </>
             </div>

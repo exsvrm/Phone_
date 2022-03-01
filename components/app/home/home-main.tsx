@@ -1,6 +1,6 @@
 import React from "react";
 import { AppProps, applications } from "../../../appList";
-import { BottomApp } from "./Bottom/App";
+import BottomApp from "./Bottom/App";
 import { Link } from 'react-router-dom';
 
 import "./styles.scss";
